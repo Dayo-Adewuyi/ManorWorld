@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+@layer base {
+  p,
+  a {
+    @apply font-semibold text-lg no-underline;
+  }
+  h3 {
+    @apply font-semibold text-2xl;
+  }
+}
+
+@layer components {
+  .text-deepBlue {
+    @apply text-[#1713C2];
+  }
+  .bg-deepBlue {
+    @apply bg-[#1713C2];
+  }
+  .bg-lilac {
+    @apply bg-[#1713C2]/[.12];
+  }
+  .border-deepBlue {
+    @apply border-[#1713C2];
+  }
+}
